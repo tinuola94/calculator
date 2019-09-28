@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body" data-mode="normal">
+    <script>
+        function calculate(result) {
+            form.screen.value=form.screen.value+result;   
+        }
+    </script>
+    <div class="container">
+        <form name="form">
+            <div class="displayResult"> 
+                <input type="text" name="screen" placeholder="0">
+            </div>
+           <div class="btn">
+                <div class="row">
+                    <input type="button" name="b1" value="1" onclick="calculate(b1.value)">
+                    <input type="button" name="b2" value="2" onclick="calculate(b2.value)">
+                    <input type="button" name="b3" value="3" onclick="calculate(b3.value)">
+                    <input type="button" name="addbtn" value="+" onclick="calculate(addbtn.value)">
+                </div>
+                <div class="row">
+                        <input type="button" name="b4" value="4" onclick="calculate(b4.value)">
+                        <input type="button" name="b5" value="5" onclick="calculate(b5.value)">
+                        <input type="button" name="b6" value="6" onclick="calculate(b6.value)">
+                        <input type="button" name="subbtn" value="-" onclick="calculate(subbtn.value)">
+                    </div>
+                 <div class="row">
+                            <input type="button" name="b7" value="7" onclick="calculate(b7.value)">
+                            <input type="button" name="b8" value="8" onclick="calculate(b8.value)">
+                            <input type="button" name="b9" value="9" onclick="calculate(b9.value)">
+                            <input type="button" name="mulbtn" value="*" onclick="calculate(mulbtn.value)">
+                        </div>
+                <div class="row">
+                                <input type="button" name="b0" value="0" onclick="calculate(b0.value)">
+                                <input type="button" name="dot" value="." onclick="calculate(dot.value)">
+                                <input type="button" name="div" value="/" onclick="calculate(div.value)">
+                                <input type="button"  value="=" onclick="screen.value=eval(screen.value)">
+                            </div>
+                            <div class="row">
+                                    <input type="button" name="bra1" value="(" onclick="calculate(bra1.value)">
+                                    <input type="button" name="bra2" value=")" onclick="calculate(bra2.value)">
+                                    <input type="button" name="Mode" value="M" class="blue"  onclick="mode()">
+                                   <a href="index.html"><input type="button" value="C" class="code"></a> 
+                                </div>
+       
+
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
